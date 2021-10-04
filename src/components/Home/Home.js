@@ -23,7 +23,9 @@ const Home = () => {
                <h2 className="mt-5 text-center text-success">Our Popular online courses</h2>
            <Row xs={1} md={4} className="g-4 my-4">
            {
-            display.map(service => <Service service={service}>
+            display.map(service => <Service
+            key ={service.id}
+             service={service}>
 
             </Service>)   
            }

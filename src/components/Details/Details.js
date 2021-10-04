@@ -15,11 +15,11 @@ const Details = () => {
         .then(data => setCourseDetails(data))
     }, []);
 
-    useEffect(()=> {
-        const singleCourseDetails = courseDetails.find(service => service.id === id)
-        // console.log(singleCourseDetails)
-        setCourse(singleCourseDetails)
-    }, [courseDetails])
+    // useEffect(()=> {
+    //     const singleCourseDetails = courseDetails.find(service => service.id === id)
+    //     // console.log(singleCourseDetails)
+    //     setCourse(singleCourseDetails)
+    // }, [courseDetails])
     
     return (
         <div className="">
